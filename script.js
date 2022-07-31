@@ -8,16 +8,16 @@ let masterSongname = document.getElementById('masterSongname');
 let songItems=Array.from(document.getElementsByClassName('songItem'));
 let songs =[
     {songName : "1.Sunflower x Bad Liar", filePath:"/songs/1.mp3", coverPath:"cover2.jpg"},
-    {songName : "2.kesariya", filePath:"/songs/2.mp3", coverPath:"cover2.jpg"},
-    {songName : "3.Srivalli", filePath:"/songs/3.mp3", coverPath:"cover2.jpg"},
-    {songName : "4.Abhi kuch dino se", filePath:"/songs/4.mp3", coverPath:"cover2.jpg"},
-    {songName : "5.Behchalla", filePath:"/songs/5.mp3", coverPath:"cover2.jpg"},
-    {songName : "6.Duaa", filePath:"/songs/6.mp3", coverPath:"cover2.jpg"},
-    {songName : "7.Ghungroo", filePath:"/songs/7.mp3", coverPath:"cover2.jpg"},
-    {songName : "8.Jai Jai Shivashankar", filePath:"/songs/8.mp3", coverPath:"cover2.jpg"},
-    {songName : "9.Jugraffia", filePath:"/songs/9.mp3", coverPath:"cover2.jpg"},
-    {songName : "10.Khariyat", filePath:"/songs/10.mp3", coverPath:"cover2.jpg"},
-    {songName : "10.Bhulbhullaiya 2 Title track", filePath:"/songs/11.mp3", coverPath:"cover2.jpg"},
+    {songName : "2.Khariyatt", filePath:"/songs/10.mp3", coverPath:"cover2.jpg"},
+    {songName : "3.Bhulbhulaiya 2", filePath:"/songs/11.mp3", coverPath:"cover2.jpg"},
+    {songName : "4.Kesariya", filePath:"/songs/2.mp3", coverPath:"cover2.jpg"},
+    {songName : "5.Srivalli", filePath:"/songs/3.mp3", coverPath:"cover2.jpg"},
+    {songName : "6.Abhi kuch dino se", filePath:"/songs/4.mp3", coverPath:"cover2.jpg"},
+    {songName : "7.Behchalla", filePath:"/songs/5.mp3", coverPath:"cover2.jpg"},
+    {songName : "8.Duaa", filePath:"/songs/6.mp3", coverPath:"cover2.jpg"},
+    {songName : "9.Ghungroo", filePath:"/songs/7.mp3", coverPath:"cover2.jpg"},
+    {songName : "10.Jai Jai ShivShankar", filePath:"/songs/8.mp3", coverPath:"cover2.jpg"},
+    {songName : "11. Jugraffia", filePath:"/songs/9.mp3", coverPath:"cover2.jpg"},
 
 ]
 songItems.forEach((element, i)=>{

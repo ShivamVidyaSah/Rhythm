@@ -1,22 +1,23 @@
 console.log("Welcome to Rhythm");
 let songIndex=0;
-let audioElement = new Audio('1.mp3');
+let audioElement = new Audio('songs/1.mp3');
 let masterPlay = document.getElementById('masterPlay');
 let myProgressBar = document.getElementById('myProgressBar');
 let gif =document.getElementById('gif');
 let masterSongname = document.getElementById('masterSongname');
 let songItems=Array.from(document.getElementsByClassName('songItem'));
 let songs =[
-    {songName : "1.Sunflower x Bad Liar", filePath:"songs/1.mp3", coverPath:"cover2.jpg"},
-    {songName : "2.kesariya", filePath:"songs/2.mp3", coverPath:"cover2.jpg"},
-    {songName : "3.Srivalli", filePath:"songs/3.mp3", coverPath:"cover2.jpg"},
-    {songName : "4.Abhi kuch dino se", filePath:"songs/4.mp3", coverPath:"cover2.jpg"},
-    {songName : "5.Behchalla", filePath:"songs/5.mp3", coverPath:"cover2.jpg"},
-    {songName : "6.Duaa", filePath:"songs/6.mp3", coverPath:"cover2.jpg"},
-    {songName : "7.Ghungroo", filePath:"songs/7.mp3", coverPath:"cover2.jpg"},
-    {songName : "8.Jai Jai Shivashankar", filePath:"songs/8.mp3", coverPath:"cover2.jpg"},
-    {songName : "9.Jugraffia", filePath:"songs/9.mp3", coverPath:"cover2.jpg"},
-    {songName : "10.Khariyat", filePath:"songs/10.mp3", coverPath:"cover2.jpg"},
+    {songName : "1.Sunflower x Bad Liar", filePath:"/songs/1.mp3", coverPath:"cover2.jpg"},
+    {songName : "2.kesariya", filePath:"/songs/2.mp3", coverPath:"cover2.jpg"},
+    {songName : "3.Srivalli", filePath:"/songs/3.mp3", coverPath:"cover2.jpg"},
+    {songName : "4.Abhi kuch dino se", filePath:"/songs/4.mp3", coverPath:"cover2.jpg"},
+    {songName : "5.Behchalla", filePath:"/songs/5.mp3", coverPath:"cover2.jpg"},
+    {songName : "6.Duaa", filePath:"/songs/6.mp3", coverPath:"cover2.jpg"},
+    {songName : "7.Ghungroo", filePath:"/songs/7.mp3", coverPath:"cover2.jpg"},
+    {songName : "8.Jai Jai Shivashankar", filePath:"/songs/8.mp3", coverPath:"cover2.jpg"},
+    {songName : "9.Jugraffia", filePath:"/songs/9.mp3", coverPath:"cover2.jpg"},
+    {songName : "10.Khariyat", filePath:"/songs/10.mp3", coverPath:"cover2.jpg"},
+    {songName : "10.Bhulbhullaiya 2 Title track", filePath:"/songs/11.mp3", coverPath:"cover2.jpg"},
 
 ]
 songItems.forEach((element, i)=>{
@@ -62,7 +63,7 @@ Array.from(document.getElementsByClassName('songItemplay')).forEach(function (el
         songIndex = parseInt(e.target.id);
         e.target.classList.remove('fa-play');
         e.target.classList.add('fa-pause');
-        audioElement.src = `songs/${songIndex+1}.mp3`;
+        audioElement.src = `/songs/${songIndex+1}.mp3`;
         audioElement.currentTime = 0;
         masterSongname.innerHTML = songs[songIndex].songName;
         audioElement.play();
@@ -78,7 +79,7 @@ document.getElementById('previous').addEventListener('click', ()=>{
     }else{
 
     songIndex-=1;}
-    audioElement.src = `songs/${songIndex+1}.mp3`;
+    audioElement.src = `/songs/${songIndex+1}.mp3`;
         audioElement.currentTime = 0;
         masterSongname.innerHTML = songs[songIndex].songName;
         audioElement.play();
@@ -87,12 +88,12 @@ document.getElementById('previous').addEventListener('click', ()=>{
 })
 
 document.getElementById('next').addEventListener('click', ()=>{
-    if(songIndex>9){
+    if(songIndex>10){
         songIndex=0;
     }else{
 
     songIndex+=1;}
-    audioElement.src = `songs/${songIndex+1}.mp3`;
+    audioElement.src = `/songs/${songIndex+1}.mp3`;
         audioElement.currentTime = 0;
         masterSongname.innerHTML = songs[songIndex].songName;
         audioElement.play();

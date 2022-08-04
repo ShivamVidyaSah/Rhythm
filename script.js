@@ -12,11 +12,10 @@ let songs =[
     {songName : "3.Srivalli", filePath:"/songs/3.mp3", coverPath:"cover2.jpg"},
     {songName : "4.Abhi kuch dino se", filePath:"/songs/4.mp3", coverPath:"cover2.jpg"},
     {songName : "5.The Punjaabban Song", filePath:"/songs/5.mp3", coverPath:"cover2.jpg"},
-    {songName : "6.Duaa", filePath:"/songs/6.mp3", coverPath:"cover2.jpg"},
-    {songName : "7.Khairiyat", filePath:"/songs/7.mp3", coverPath:"cover2.jpg"},
-    {songName : "8.Jaise Savan", filePath:"/songs/8.mp3", coverPath:"cover2.jpg"},
-    {songName : "9.Jugraafiya", filePath:"/songs/9.mp3", coverPath:"cover2.jpg"},
-    {songName : "10. Bhool Bhulaiya 2(Title Track) ", filePath:"/songs/10.mp3", coverPath:"cover2.jpg"},
+    {songName : "6.Khairiyat", filePath:"/songs/6.mp3", coverPath:"cover2.jpg"},
+    {songName : "7.Jaise Savan", filePath:"/songs/7.mp3", coverPath:"cover2.jpg"},
+    {songName : "8.Jugraafiya", filePath:"/songs/8.mp3", coverPath:"cover2.jpg"},
+    {songName : "9. Bhool Bhulaiya 2(Title Track) ", filePath:"/songs/9.mp3", coverPath:"cover2.jpg"},
 
 ]
 songItems.forEach((element, i)=>{

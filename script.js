@@ -86,7 +86,7 @@ document.getElementById('previous').addEventListener('click', ()=>{
 })
 
 document.getElementById('next').addEventListener('click', ()=>{
-    if(songIndex>10){
+    if(songIndex>9){
         songIndex=0;
     }else{
 
